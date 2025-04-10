@@ -1,0 +1,49 @@
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+//path
+$path-image: "#{$path-assets}/images";
+
+//Color
+
+$black: #000;
+$white: #FFFFFF;
+$dark: #1E201F;
+$dark2: #262727;
+$gray: #D9D9D9;
+$gray2: #F2F3F9;
+$gray3: #D1CFCF;
+$gray4: #DDDADA;
+$gray5: #585858;
+
+
+$primary: #FA9F1D;
+$secondary: #7984C2;
+
+$orange: #F37A21;
+$light-orange2: #FFF9F0;
+$purple2: #6C75AA;
+$purple3: #5664B2;
+$light-blue: #A7C4E6;
+$light-blue2: #F3F7FC;
+$light-blue3: #B4D6FF;
+$light-blue4: #F2F8FF;
+$light-blue5: #5E6BB6;
+$peach: #F5EEEE;
+
+
+//Body
+$font-family-base: "Young", sans-serif;
+$font-weight-base: 400;
+$body-color: $dark;
+$line-height-base: 1.5;
+
+//Heading
+$headings-font-weight: 700;
+$headings-color: $dark;
+$headings-font-family: "Zona Pro", sans-serif;
+$headings-line-height: 1.2;
+
+/* Transition */
+$transition-global:	all ease-in-out 0.2s;

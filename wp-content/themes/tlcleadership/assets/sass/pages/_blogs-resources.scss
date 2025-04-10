@@ -1,0 +1,254 @@
+.blog-banner {
+    padding: 10rem 0 80px;
+
+    .title-wrap {
+        h1 {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+
+    .img-wrap {
+        margin-bottom: 35px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        h4 {
+            text-align: center;
+            max-width: 927px;
+            width: 100%;
+            margin: 0 auto 20px;
+        }
+
+        p {
+            text-align: center;
+            max-width: 892px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.popular-resources {
+    .title-wrap {
+        h3 {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+    }
+
+    .content-wrap {
+        .outer-wrap {
+            margin-bottom: 25px;
+
+            .card-wrap {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                border-radius: 20px;
+                overflow: hidden;
+                height: 100%;
+
+                .img-wrap {
+                    width: 33%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .content {
+                    background-color: white;
+                    padding: 27px 20px 56px;
+                    width: 67%;
+                    position: relative;
+
+                    h6 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        max-width: 325px;
+                        width: 100%;
+                    }
+
+                    .btn-wrap {
+                        position: absolute;
+                        bottom: 27px;
+                        left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.leadership-blog {
+    .title-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 53px;
+
+        // max-width: 767.98px
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+
+        h3 {
+            margin-bottom: 0;
+
+            // max-width: 767.98px
+            @include media-breakpoint-down(md) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .leadership-blog-card {
+        .card-wrap {
+            padding-bottom: 25px;
+
+            &:before {
+                display: none;
+            }
+
+            &:after {
+                display: none;
+            }
+
+            .content {
+                transition: $transition-global;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}
+
+
+.leadership-challenges {
+    .title-wrap {
+        padding-bottom: 50px;
+
+        h4 {
+            text-align: center;
+            max-width: 759px;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 35px;
+        }
+    }
+
+    .outer-wrap {
+        margin-bottom: 55px;
+
+        .challenge-wrap {
+            border-bottom: 1px solid #5593D1;
+            padding: 40px 0;
+
+            .content-wrap {
+
+                .content {
+
+                    // max-width: 767.98px
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 25px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+
+                    .title {
+                        h6 {
+                            font-size: 20px;
+                            max-width: 341px;
+                            width: 100%;
+                            line-height: 1.5;
+
+                            // max-width: 767.98px
+                            @include media-breakpoint-down(md) {
+                                max-width: unset;
+                            }
+                        }
+                    }
+
+                    .text {
+                        p {
+                            max-width: 486px;
+                            width: 100%;
+
+                            // max-width: 767.98px
+                            @include media-breakpoint-down(md) {
+                                max-width: unset;
+                            }
+                        }
+                    }
+
+                    .audio {
+                        padding-top: 20px;
+
+                        .btn-wrap {
+                            .btn-link {
+                                text-transform: uppercase;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                align-items: center;
+                                padding-right: 0;
+
+                                &:hover {
+                                    color: $secondary;
+                                    .audio-icon {
+                                        background-color: $secondary;
+                                    }
+                                }
+
+                                .audio-icon {
+                                    background-color: $orange;
+                                    width: 42px;
+                                    height: 42px;
+                                    border-radius: 100%;
+                                    position: relative;
+                                    transition: $transition-global;
+                                    margin-left: 25px;
+        
+                                    .icon-play {
+                                        color: $white;
+                                        font-size: 23px;
+                                        position: absolute;
+                                        top: 47%;
+                                        left: 53%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                }
+
+                                &:before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-wrap {
+        display: flex;
+        justify-content: center;
+    }
+}

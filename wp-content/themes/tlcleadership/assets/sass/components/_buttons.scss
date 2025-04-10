@@ -1,0 +1,89 @@
+.btn {
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 36px;
+  color: $white;
+  font-family: "Young", sans-serif;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  padding: 10px 37px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  transition: $transition-global;
+
+  &:hover {
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $secondary;
+  }
+}
+
+
+.btn-secondary {
+  padding: 6px 46px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  transition: $transition-global;
+
+  &:hover {
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $secondary;
+  }
+}
+
+
+.btn-tertiary {
+  padding: 10px 24px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  transition: $transition-global;
+
+  &:hover {
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $secondary;
+  }
+}
+
+
+
+
+.btn-link {
+  text-transform: capitalize;
+  color: $primary;
+  position: relative;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1.5;
+  padding-right: 25px;
+  transition: $transition-global;
+
+  span {
+    position: absolute;
+    top: 4px;
+    right: -2px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background-color: $primary;
+    transition: all ease-in-out .3s;
+  }
+
+  &:hover {
+    color: $primary;
+
+    &:before {
+      width: 100%;
+    }
+  }
+
+}
